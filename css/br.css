@@ -1,0 +1,113 @@
+/* Imort fonts */ 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+/*--------------------------------------------------------------
+>>> INDHOLDFORTEGNELSE:
+1.0 Main css
+2.0 Header css
+3.0 Footer css
+4.0 Page css
+5.0 Responsive css
+    5.1 Large Screen
+    5.2 Medium Screen
+    5.3 Small Screen
+    5.4 Extra Small Screen
+---------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+1.0 Main css
+---------------------------------------------------------------- */
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+
+
+/*--------------------------------------------------------------
+3.0 Footer css
+---------------------------------------------------------------- */
+
+footer {
+    background-color: #236327;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+footer .container .textwidget {
+    margin: 20px 10px;
+}
+
+footer .container p {
+    margin: 0;
+    color: white;
+}
+
+footer .container a:hover {
+    text-decoration: none;
+}
+
+footer .container a p:hover {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 300;
+    text-shadow: 0px 3px 6px #333333;
+}
+
+footer .container .footer-pipe {
+    font-weight: 900;
+}
+
+
+
+/*--------------------------------------------------------------
+5.0 Responsive css
+---------------------------------------------------------------- */
+
+/* 5.1 Large Screen */
+@media screen and (max-width: 1200px) { 
+
+}
+
+
+/* 5.2 Medium Screen */
+@media screen and (max-width: 991px) { 
+    footer .container .footer-pipe {
+        display: none;
+    }
+
+    footer .container {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer .container .textwidget {
+        margin: 10px 0;
+    }
+}
+
+
+/* 5.3 Small Screen */
+@media screen and (max-width: 767px) { 
+
+}
+
+
+/* 5.4 Extra Small Screen */
+@media screen and (max-width: 575px) { 
+
+}
