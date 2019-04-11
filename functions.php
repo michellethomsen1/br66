@@ -20,6 +20,18 @@ add_action( 'wp_enqueue_scripts', 'brwordpress_scripts' );
 
 
 /* ==========================================
+	Activate Menus
+============================================= */
+
+function register_my_menu() {
+	register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+
+add_action( 'init', 'register_my_menu' );
+
+
+
+/* ==========================================
 	Register Sidebars and Widgets.
 ============================================= */
 
@@ -45,3 +57,19 @@ function arphabet_widgets_init() {
 }
 
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
+
+/* ==========================================
+	Theme Support
+============================================= */
+
+add_theme_support( 'title-tag' );
+
+add_theme_support( 'custom-logo', array(
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+) );
+
+add_theme_support( 'post-thumbnails' );
