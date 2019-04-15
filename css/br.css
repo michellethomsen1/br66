@@ -73,6 +73,15 @@ header nav.navbar {
     padding: 0;
 }
 
+header .navbar-expand-lg .toogler-nav-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .navbar-expand-lg {
+    flex-flow: wrap;
+}
+
 header nav .menu {
     width: 100%;
 }
@@ -114,6 +123,12 @@ header nav .menu ul li a:hover {
     color: #ffffff;
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+header .navbar-dark .navbar-toggler {
+    margin-top: -100px;
+    border: none;
+    color: white;
 }
 
 
@@ -170,6 +185,34 @@ footer .container .footer-pipe {
 
 /* 5.2 Medium Screen */
 @media screen and (max-width: 991px) { 
+    header .header-brand .bg-image img {
+        height: 100px;
+    }
+    
+    header .header-brand .header-overlay {
+        height: 100px;
+    }
+    
+    header .header-brand .header-overlay img {
+        height: 80px;
+    }
+
+    header nav .menu ul {
+        flex-direction: column;
+    }
+
+    header nav .menu ul li {
+        border: none;
+    }
+
+    header nav .menu ul li:first-child {
+        border: none;
+    }
+
+    header nav .menu ul li a {
+        padding: 15px 0;
+    }
+    
     footer .container .footer-pipe {
         display: none;
     }

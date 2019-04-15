@@ -33,15 +33,19 @@
         </div><!-- header-overlay -->
     </div><!-- header-brand -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <div class="container toogler-nav-icon">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         
-        <div class="collapse navbar-collapse container" id="navbarNav">
-            <?php wp_nav_menu( array(
-                'theme_location' => 'header-menu' 
-            ) ); ?>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <div class="container">
+                <?php wp_nav_menu( array(
+                    'theme_location' => 'header-menu' 
+                ) ); ?>
+            </div> <!-- container -->
         </div><!-- collapse -->
     </nav>
 </header>
