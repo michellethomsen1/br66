@@ -13,13 +13,13 @@
     5.2 Medium Screen
     5.3 Small Screen
     5.4 Extra Small Screen
----------------------------------------------------------------- */
+----------------------------------------------------------------*/
 
 
 
 /*--------------------------------------------------------------
 1.0 Main css
----------------------------------------------------------------- */
+----------------------------------------------------------------*/
 h1 {
     font-family: 'Roboto', sans-serif;
 }
@@ -31,11 +31,16 @@ p {
     font-weight: 300;
 }
 
+section {
+    margin: 50px 0;
+    height: 100vh;
+}
+
 
 
 /*--------------------------------------------------------------
 2.0 Header css
----------------------------------------------------------------- */
+----------------------------------------------------------------*/
 
 header .header-brand {
     background-image: linear-gradient(to right, #ffffff, #236327);
@@ -82,33 +87,33 @@ header .navbar-expand-lg {
     flex-flow: wrap;
 }
 
-header nav .menu {
+header nav .menu-header-container {
     width: 100%;
 }
 
-header nav .menu ul {
+header nav .menu-header-container ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-header nav .menu ul li {
+header nav .menu-header-container ul li {
     flex-grow: 1;
     border-right: 2px solid #ffffff;
     text-align: center;
 }
 
-header nav .menu ul li:first-child {
+header nav .menu-header-container ul li:first-child {
     border-left: 2px solid #ffffff;
 }
 
-header nav .menu ul li.current_page_item a {
+header nav .menu-header-container ul li.current_page_item a {
     background-color: #236327;
     color: #ffffff;
 }
 
-header nav .menu ul li a {
+header nav .menu-header-container ul li a {
     color: #333333;
     padding: 20px 0;
     display: block;
@@ -117,7 +122,7 @@ header nav .menu ul li a {
     font-family: 'Roboto', sans-serif;
 }
 
-header nav .menu ul li a:hover {
+header nav .menu-header-container ul li a:hover {
     text-decoration: none;
     background-color: #236327;
     color: #ffffff;
@@ -135,7 +140,7 @@ header .navbar-dark .navbar-toggler {
 
 /*--------------------------------------------------------------
 3.0 Footer css
----------------------------------------------------------------- */
+----------------------------------------------------------------*/
 
 footer {
     background-color: #236327;
@@ -175,7 +180,7 @@ footer .container .footer-pipe {
 
 /*--------------------------------------------------------------
 5.0 Responsive css
----------------------------------------------------------------- */
+----------------------------------------------------------------*/
 
 /* 5.1 Large Screen */
 @media screen and (max-width: 1200px) { 
