@@ -202,19 +202,25 @@ footer .container .footer-pipe {
         height: 80px;
     }
 
-    header nav .menu ul {
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+
+    header nav .menu-header-container ul {
         flex-direction: column;
     }
 
-    header nav .menu ul li {
+    header nav .menu-header-container ul li {
         border: none;
     }
 
-    header nav .menu ul li:first-child {
+    header nav .menu-header-container ul li:first-child {
         border: none;
     }
 
-    header nav .menu ul li a {
+    header nav .menu-header-container ul li a {
         padding: 15px 0;
     }
     
