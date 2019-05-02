@@ -32,10 +32,9 @@ p {
 }
 
 section {
-    margin: 50px 0;
+    margin: 100px 0;
     height: 100vh;
 }
-
 
 
 /*--------------------------------------------------------------
@@ -77,6 +76,13 @@ header .header-brand .header-overlay img {
 header nav.navbar {
     padding: 0;
 }
+
+header nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 
 header .navbar-expand-lg .toogler-nav-icon {
     display: flex;
@@ -200,12 +206,6 @@ footer .container .footer-pipe {
     
     header .header-brand .header-overlay img {
         height: 80px;
-    }
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%
     }
 
     header nav .menu-header-container ul {
