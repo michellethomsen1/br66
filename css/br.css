@@ -7,12 +7,13 @@
 1.0 Main css
 2.0 Header css
 3.0 Footer css
-4.0 Page css
-5.0 Responsive css
-    5.1 Large Screen
-    5.2 Medium Screen
-    5.3 Small Screen
-    5.4 Extra Small Screen
+4.0 Front page css
+5.0 Page css
+6.0 Responsive css
+    6.1 Large Screen
+    6.2 Medium Screen
+    6.3 Small Screen
+    6.4 Extra Small Screen
 ----------------------------------------------------------------*/
 
 
@@ -22,6 +23,24 @@
 ----------------------------------------------------------------*/
 h1 {
     font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 22px;
 }
 
 p {
@@ -29,12 +48,24 @@ p {
     font-family: 'Lato', sans-serif;
     line-height: 22px;
     font-weight: 300;
+    color: #333333;
+}
+
+a {
+    color: #333333;
+}
+
+a:hover {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+    color: #236327;
 }
 
 section {
     margin: 100px 0;
-    height: 100vh;
 }
+
 
 
 /*--------------------------------------------------------------
@@ -74,6 +105,7 @@ header .header-brand .header-overlay img {
 }
 
 header nav.navbar {
+    z-index: 1;
     padding: 0;
 }
 
@@ -82,7 +114,6 @@ header nav.sticky {
     top: 0;
     width: 100%;
 }
-
 
 header .navbar-expand-lg .toogler-nav-icon {
     display: flex;
@@ -185,16 +216,102 @@ footer .container .footer-pipe {
 
 
 /*--------------------------------------------------------------
-5.0 Responsive css
+4.0 Front page css
 ----------------------------------------------------------------*/
 
-/* 5.1 Large Screen */
+.front-page .frontpage_content {
+    padding-right: 50px;
+}
+
+.front-page .frontpage_branch a .branch_single {
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.front-page .frontpage_branch a .branch_single:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front-page .frontpage_branch a .branch_single:hover h4 {
+    color: #236327;
+}
+
+.front-page .frontpage_branch a .branch_single img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.front-page .frontpage_branch p {
+    text-align: center;
+}
+    
+
+
+/*--------------------------------------------------------------
+5.0 Page css
+----------------------------------------------------------------*/
+
+.page .side_menu h3{
+    background-color: #236327;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.page .side_menu ul {
+    padding: 0;
+}
+
+.page .side_menu ul li {
+    border-top: 2px solid #ffffff;
+    list-style: none;
+}
+
+.page .side_menu ul li.current_page_item a {
+    background-color: #236327;
+    color: #ffffff;
+}
+
+.page .side_menu ul li a {
+    color: #333333;
+    padding: 15px 30px;
+    display: block;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.page .side_menu ul li a:hover {
+    text-decoration: none;
+    background-color: #236327;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.page .page_content {
+    padding-left: 50px;
+}
+
+
+
+/*--------------------------------------------------------------
+6.0 Responsive css
+----------------------------------------------------------------*/
+
+/* 6.1 Large Screen */
 @media screen and (max-width: 1200px) { 
 
 }
 
 
-/* 5.2 Medium Screen */
+/* 6.2 Medium Screen */
 @media screen and (max-width: 991px) { 
     header .header-brand .bg-image img {
         height: 100px;
@@ -240,13 +357,15 @@ footer .container .footer-pipe {
 }
 
 
-/* 5.3 Small Screen */
+/* 6.3 Small Screen */
 @media screen and (max-width: 767px) { 
 
 }
 
 
-/* 5.4 Extra Small Screen */
+/* 6.4 Extra Small Screen */
 @media screen and (max-width: 575px) { 
-
+    header .navbar-dark .navbar-toggler {
+        margin-right: 20px;
+    }
 }

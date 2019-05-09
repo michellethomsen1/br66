@@ -30,6 +30,25 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 
+function wpb_list_child_pages() {
+	global $post;
+
+	if ( is_page() && $post->post_parent ) {
+		$kiddies = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );	
+	} else {
+		$kiddies = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
+	}
+
+	if ( $kiddies ) {
+		echo '<ul>';
+			echo $kiddies;
+		echo '</ul>';
+	} 
+}
+	 
+add_shortcode('wpb_childpages', 'wpb_list_child_pages');
+
+
 
 /* ==========================================
 	Register Sidebars and Widgets.
